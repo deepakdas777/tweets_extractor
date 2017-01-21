@@ -1,0 +1,15 @@
+{% extends 'tweets/base.html' %}
+{%load staticfiles%}
+{% block content %}
+{%if datas%}
+<div align="left">
+<h2><h2 style="text-align:center;"><font face="arial" color="violet"><i><b><u>Tweets of {{twitter_id}}</u></i></b></h2>
+<ol>
+        {%for data in datas%}
+                <font face="arial" color="black"><li>{{data}}</li>
+        {%endfor%}
+</ol>
+</div>{%endif%}
+<a href="/" title="Back to the Home page"><b>HOME</b></a> | <a href="#" title="To the top of this page"><b>BACK TO TOP</b></a>
+{% endblock content %}
+

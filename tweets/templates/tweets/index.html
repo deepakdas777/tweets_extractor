@@ -1,0 +1,12 @@
+<head></head>
+{% extends "tweets/base.html" %}
+{% block content %}
+<form action="results" method="POST" name="POST">
+{% csrf_token %}
+<div align="center">
+        User_id<input type="text" name="twitter_id" tabindex="1" required>
+           <input name="tweet" type="submit"  value="submit">
+        </form>
+</div>
+
+{% endblock %}
